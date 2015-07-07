@@ -1,2 +1,15 @@
 # Timers-java_g99Lesson
-Lesson 37 &amp; 38
+###Lesson 37 (Java Timer) &amp; 38 (Date)
+
+
+Found it interesting how G99 decided to go about Timer-java lesson & spliting up 3 classes to execute main goal.  Kinda feel like it's clean or @ the very least def showing another way to go about things. Classes on top of classes.  Also they actually OneUp TutorialsPoint by showing me how to format my date appearance.  That was grouped together really well & not easily findable on TP.  However, initially TP did explained better/easier.  Learned alot with both of these lessons:
+* Seems with **TimerTask**, You have to create a class that extends to it in order to override the `run()` method.  **TimerTask** is solely a Abstract class & that's why eclipse compiler doesn't like for me to use it directly.
+* I properly imported what was needed for each class on my own with no help from G99 on this lesson. (could've lead one to believe items needed to be imported for each class)
+* **TimerTask** is a simple class that uses the `run()` method of Threads when the task is invoked. And in my **CustTimerTalk**, `String strObject` helped us identify which task is running.
+* Liked, I was reminded that you can still do calculations within a method variable intake. (i.e. scheduling a task within **TimerCust** class)
+* More familiarity with 'new' keyword and using it soley without instantiating within a variable.
+
+####Growing Pains: during coding session
+* Many Errors all because I forgot to declare 'timingCapture_2' an int variable.. Felt 8 Errors, lots of red. Eclipse save me ~2hrs. -> **TimerzCust** class
+* Got a lesson to make sure I **SELECT** the **PROPER Auto-Finish Selection** when completing rest of a word.  Timing was way off due to me pointing to timingCapture_2 for timingTask object. Made me thought Java couldn't handle running things in parallel or it gave priority to my 2nd task. -> **TimerzCust** class
+* Interesting: missing format string 'strDateFormat' caused same date to be printed over & over. -> **CustTimerTask** class
