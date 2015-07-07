@@ -16,4 +16,4 @@ Found it interesting how G99 decided to go about Timer-java lesson & spliting up
 * Interesting: missing format string 'strDateFormat' caused same date to be printed over & over. -> **CustTimerTask** class
 
 Food for thought:
-* Was thinking how to stop the timer task after a certain number of runs.  Then proceeded to ask myself how do I count the number of runs and Stop at a certain point.  Then realized that in the question lies my answer.  Essentially I would; insert a counter variable to increase in 'CustTimerTask.run()', then create a conditional boolean statement to run the `ojbTimer.cancel()` in my `TimerzCust" class.
+* Was thinking how to stop the timer task after a certain number of runs.  Then proceeded to ask myself how do I count the number of runs and Stop at a certain point.  Then realized that in the question lies my answer.  Essentially I would; insert a counter variable to increase in `CustTimerTask.run()`, then create a conditional boolean statement to run the `ojbTimer.cancel()` in my `TimerzCust` class.
