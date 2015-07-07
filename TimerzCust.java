@@ -10,9 +10,12 @@ public class TimerzCust{
 		//Many Errors all because I forgot to declare 'timingCapture_2' an int variable.. Felt 8 Errors, lots of red
 
 		Timer timingTask_1 = new Timer();  //Originally G99 broke this up
-		timingTask_1.schedule(new CustTimerTask("Alpha"), timingCapture_1 * 1000, timingCapture_2 * 1000);
-		//like how they reminded that you can still do calculations before last part in output of above line
-		
+		timingTask_1.schedule(new CustTimerTask("Alpha"), timingCapture_1 * 1000, timingCapture_1 * 1000);
+		//Got a lesson to make sure I SELECT the PROPER Auto-Finish Selection when completing rest of a word.
+		//Timing was way off due to me pointing to timingCapture_2 for timingTask object. Made me thought Java
+		//couldn't handle running things in parallel or it gave priority to my 2nd task.
+
+		//like how they reminded that you can still do calculations within a method variable
 		Timer timingTask_2 = new Timer();
 		timingTask_2.schedule(new CustTimerTask("Bravo"), timingCapture_2 * 6000, timingCapture_2 * 1500);
 	}
