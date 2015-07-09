@@ -7,5 +7,6 @@ class TimerMainRun{
 		// no methods in TimerzCust class
 		new TimerzCust(1,5);
 		//G99 didn't really explain the 'new' keyword. 
+		//trying from eclipse push
 	}
 }
